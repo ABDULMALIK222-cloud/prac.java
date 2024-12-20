@@ -124,4 +124,25 @@ public class Main{
     System.out.println("balance:"+account.getBalance());
   }
 }
-    
+// Abstraction means hiding the complex implementation data and showing only essential features of the objects is said to be Abstraction
+abstract class Shape{
+    abstract void draw();
+}
+class Circle extends Shape{
+    void draw(){
+        System.out.println("draw the circle");
+    }
+}
+class Rectangle extends Shape{
+    void draw(){
+        System.out.println("draw the rectangle");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Shape circle = new Circle();
+        Shape rectangle = new Rectangle();
+        circle.draw();
+        rectangle.draw();
+    }
+}
