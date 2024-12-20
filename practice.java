@@ -107,4 +107,21 @@ public class Main{
     management.complaints();
   }
 }
+// program on encapsulation means wrapping up of adata and code into a single unit is said to be a encapsukation
+class Cse{
+  private double  balance;
+  public void deposit(double amount){
+    balance += amount;
+  }
+public double getBalance(){
+  return balance;
+}
+}
+public class Main{
+  public static void main(String[] Args){
+    Bankaccount account = new Bankaccount();
+    account.deposit(100.0);
+    System.out.println("balance:"+account.getBalance());
+  }
+}
     
